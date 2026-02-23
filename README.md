@@ -1,2 +1,2 @@
-# CIS106-Hector-Rodriguez
+# Hector-Rodriguez
 # rh96488@mail.harpercollege.edu
