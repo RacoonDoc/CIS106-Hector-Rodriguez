@@ -1,0 +1,10 @@
+# input phase
+radius = float(input("Enter radius of the circle: "))
+
+# process phase
+area = 3.14 * radius * radius
+perimeter = 2 * 3.14 * radius
+
+# output phase
+print("Area of the circle is:", area)
+print("Perimeter of the circle is:", perimeter)
