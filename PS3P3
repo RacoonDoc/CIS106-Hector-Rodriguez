@@ -1,0 +1,11 @@
+#input phase
+friend_cat  = int(input("Enter the earnings of friend Cat : "))
+friend_beaver  = int(input("Enter the earnings of friend Beaver: "))
+friend_dog  = int (input("Enter the earnings of friend Dog: "))
+
+#process phase 
+total = friend_cat  + friend_beaver  + friend_dog
+average = total/3
+
+#output process
+print ("Money evenly split up amongst the three friends: ", average)
