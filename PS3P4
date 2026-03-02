@@ -1,0 +1,15 @@
+#input process
+make = input("Enter the make of the car: ")
+model = input("Enter the model of the car: ")
+mrsp = int(float(input("Enter the MRSP of the car: ")))
+discount = int(float(input("Enter the discount of the car: ")))
+
+#process phase
+discounted_price = mrsp - discount
+
+#output phase
+print("Price of the car with MRSP and discount: ", discounted_price)
+print("Make of the car: ", make)
+print("Model of the car ", model)
+print("MRSP of the car: ", mrsp)
+print("Original discount of the car: ",discount)
