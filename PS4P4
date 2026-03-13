@@ -1,0 +1,13 @@
+name_of_appliance = input("Name of Appliance: ")
+cost_of_appliance = float(input("Cost of appliance: "))
+# Process phase
+if cost_of_appliance < 1000:
+    warranty = cost_of_appliance * 0.10
+else:
+    warranty = cost_of_appliance * 0.05
+total = cost_of_appliance + warranty
+# Output phase
+print("Name of Appliance:", name_of_appliance)
+print("Cost of Appliance:", cost_of_appliance)
+print("Warranty Cost:", warranty)
+print("Total Cost:", total)
