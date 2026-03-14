@@ -1,0 +1,16 @@
+last_name = input("Last name: ")
+number_of_dependents = int(input("Number of dependents: "))
+gross_income = float(input("Gross income: "))
+# Process phase
+adjusted_gross_income = gross_income - number_of_dependents * 12000
+if adjusted_gross_income < 500000:
+    income_tax = adjusted_gross_income * 1.1
+else:
+    income_tax = adjusted_gross_income * 1.2
+if adjusted_gross_income <0: income_tax = 100 
+# Output phase
+print("Last name:", last_name)
+print("Gross income:", gross_income)
+print("Numer of dependents:", number_of_dependents)
+print("Adjusted gross income:", adjusted_gross_income)
+print("Income tax: ", income_tax)
