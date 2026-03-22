@@ -1,0 +1,6 @@
+# input process
+num = 1
+# output process
+while num <= 25:
+    print(num)
+    num += 2
