@@ -1,0 +1,16 @@
+# input phase
+quantity_of_widgets = int(input("Quantity of widgets: "))
+# process phase
+if quantity_of_widgets >= 10000:
+    price_per_widget = 10
+elif 5000 <= quantity_of_widgets < 10000:
+    price_per_widget = 20
+else:
+    price_per_widget = 30
+extended_price = quantity_of_widgets * price_per_widget
+tax_price = extended_price * 0.07
+total_price = extended_price + tax_price
+# output phase
+print("Extended price =", extended_price)
+print("Tax =", tax_price)
+print("Total price =", total_price)
