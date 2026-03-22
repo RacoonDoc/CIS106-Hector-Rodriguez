@@ -1,0 +1,16 @@
+# input phase
+number_tickets= int(input("Enter the number of concert tickets: "))
+# process phase
+if number_tickets >= 25:
+    price_per_ticket = 50
+elif 10 <= number_tickets <= 24:
+  price_per_ticket = 60
+elif 5 <= number_tickets < 9:
+   price_per_ticket = 70
+else:
+    price_per_ticket = 75
+total_cost = number_tickets * price_per_ticket
+# output phase
+print ("Number of tickets: " + str(number_tickets))
+print ("Price per ticket: $" + str(price_per_ticket))
+print ("Total cost: $" + str(total_cost))
