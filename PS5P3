@@ -1,0 +1,17 @@
+# input phase
+principle_amount = int(input("Principle amount of a CD: "))
+year_maturity = int(input("Year to maturity of CD: "))
+# process phase
+if principle_amount >= 100000 and year_maturity == 5:
+    interest_rate = 0.06
+elif 50000 <= principle_amount < 100000 and year_maturity == 10:
+  interest_rate = 0.05
+elif 50000 <= principle_amount < 100000 and year_maturity == 5:
+   interest_rate = 0.04
+else:
+    interest_rate = 0.02
+first_year_interest = principle_amount * interest_rate
+# output phase
+print("First Year Interest =", first_year_interest)
+print("Principle Amount =", principle_amount)
+print("Interest Rate =", interest_rate)
