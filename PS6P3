@@ -1,0 +1,20 @@
+# First prompt
+answer = input("Do you want to calculate your test average? (y/n): ")
+# Start loop
+while answer == "y":
+    # Input phase
+    last_name = input("Enter your last name: ")
+    test_score_1 = float(input("Enter your first test score: "))
+    test_score_2 = float(input("Enter your second test score: "))
+    # Process phase
+    exam_average = (test_score_1 + test_score_2) / 2
+    # Output phase
+    print("Last Name:", last_name)
+    print("Your test average is:", exam_average)
+    count += 1
+    answer = input("Do you want to run the program again? (y/n): ")
+# If user says no at the start
+if count == 0:
+    print("You must be either super confident or insecure...")
+# End loop
+print("Total number of students:", count)
