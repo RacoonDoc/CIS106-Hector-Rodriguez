@@ -1,0 +1,23 @@
+count = 1
+# First prompt
+answer = input("Do you want to run this program? (y/n): ")
+# Start loop
+while answer == "y":
+    # Input phase
+    item_quantity = input("Enter the item quanitity: ")
+    item_price = float(input("Enter the price of the item: "))
+    # Process phase
+    extended_price = float(item_quantity) * (item_price)
+    if extended_price > 100000:
+        discount_percentage = .25
+    else:
+        discount_percentage = .10
+    discount_amount = extended_price * discount_percentage
+    # Output phase
+    print("Extended Price:", extended_price)
+    print("Discount Amount:", discount_amount)
+    count += 1 * discount_amount
+    answer = input("Do you want to run the program again? (y/n): ")
+number_of_employees = count
+if count == 0:
+    print("No information entered.")
