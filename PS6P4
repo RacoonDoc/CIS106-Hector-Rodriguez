@@ -1,0 +1,23 @@
+count = 1
+# First prompt
+answer = input("Do you want to run this program? (y/n): ")
+# Start loop
+while answer == "y":
+    # Input phase
+    employee_name = input("Enter your full name: ")
+    hours_worked = float(input("Enter how many hours you have worked: "))
+    rate_pay = float(input("Enter your rate of pay: "))
+    # Process phase
+    if hours_worked > 40:
+        gross_pay = (40 * rate_pay) + ((hours_worked - 40) * rate_pay * 1.5)
+    else:
+        gross_pay = hours_worked * rate_pay
+    # Output phase
+    print("Name:", employee_name)
+    print("Gross pay:", gross_pay)
+    print("Number of employees entered:", count)
+    count += 1
+    answer = input("Do you want to run the program again? (y/n): ")
+number_of_employees = count
+if count == 0:
+    print("No employees entered.")
