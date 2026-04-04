@@ -1,0 +1,19 @@
+count = 0
+# First prompt
+answer = input("Do you want to run this program that calculates the Fibonacci sequence (y/n): ")
+# Start loop
+while answer == "y":
+    a_fib = 1
+    b_fib = 1
+    print("The Fibonacci sequence is:", end=" ")
+    print(a_fib, b_fib, end=" ")
+    for i in range(18):
+        c_fib_total = a_fib + b_fib
+        print(c_fib_total, end=" ")
+        a_fib = b_fib
+        b_fib = c_fib_total
+    print()
+    count += 1
+    answer = input("\nRun again? (y/n): ")
+print("You ran this program", count, "times.")
+# After loop ends
