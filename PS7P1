@@ -1,0 +1,45 @@
+count = 1
+# First prompt
+answer = input("Do you want to run this program that calculates interest? (y/n): ")
+# Start loop
+while answer == "y":
+    # Input phase of year one
+    year_of_1 = input("Enter the year: ")
+    Principal_amount_1 = input("Enter the principal amount: ")
+    interest_rate_1 = float(input("Enter the interest rate: "))
+    # Input phase of year two
+    year_of_2 = input("Enter the year: ")
+    Principal_amount_2 = input("Enter the principal amount: ")
+    interest_rate_2 = float(input("Enter the interest rate: "))
+    # Input phase of year three
+    year_of_3 = input("Enter the year: ")
+    Principal_amount_3 = input("Enter the principal amount: ")
+    interest_rate_3 = float(input("Enter the interest rate: ")) 
+    # Input phase of year four
+    year_of_4 = input("Enter the year: ")
+    Principal_amount_4 = input("Enter the principal amount: ")
+    interest_rate_4 = float(input("Enter the interest rate: "))
+    # Input phase of year five
+    year_of_5 = input("Enter the year: ")
+    Principal_amount_5 = input("Enter the principal amount: ")
+    interest_rate_5 = float(input("Enter the interest rate: "))
+    # Process phase of year one
+    annual_interest_1 = float(Principal_amount_1) * (interest_rate_1) 
+    annual_interest_2 = float(Principal_amount_2) * (interest_rate_2)
+    annual_interest_3 = float(Principal_amount_3) * (interest_rate_3)
+    annual_interest_4 = float(Principal_amount_4) * (interest_rate_4)
+    annual_interest_5 = float(Principal_amount_5) * (interest_rate_5)
+    ending_balance_1 = float(Principal_amount_1) + annual_interest_1 
+    ending_balance_2 = float(Principal_amount_2) + annual_interest_2
+    ending_balance_3 = float(Principal_amount_3) + annual_interest_3
+    ending_balance_4 = float(Principal_amount_4) + annual_interest_4 
+    ending_balance_5 = float(Principal_amount_5) + annual_interest_5
+    # Output phase
+    print("Year:", year_of_1, year_of_2, year_of_3, year_of_4,year_of_5)
+    print("Principal amount:", Principal_amount_1, Principal_amount_2, Principal_amount_3, Principal_amount_4,Principal_amount_5)
+    print("Ending Balance: ", ending_balance_1, ending_balance_2, ending_balance_3, ending_balance_4, ending_balance_5)
+    answer = input("Do you want to run the program again? (y/n): ")
+if count == 0:
+    print("No information entered.")
+     # End loop
+    
