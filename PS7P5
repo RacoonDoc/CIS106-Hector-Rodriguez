@@ -1,0 +1,22 @@
+count = 1
+# Open and read the file
+with open("PS7P5.txt", "r") as file:
+   print(file.read())
+answer = input("Do you want to run this program that calculates tuition owed? (y/n): ")
+    # Start loop
+while answer == "y":
+    last_name = print ("Enter the student's last name: ")
+    district_code = print ("Enter the district code (O or I): ")
+    district_code = input()
+    number_of_credits = print ("Enter the number of credits: ")
+    if district_code == O: cost_of_tuition is 250 
+    if district_code == I: cost_of_tuition is 500
+tuition_cost = cost_of_tuition * number_of_credits
+#output
+print (last_name)
+print (tuition_cost)
+print (number_of_credits)
+answer = input("Do you want to run the program again? (y/n): ")
+if count == 0:
+    print("No information entered.")
+     # End loop
