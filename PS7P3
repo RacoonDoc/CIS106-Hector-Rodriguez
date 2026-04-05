@@ -1,0 +1,17 @@
+# Open and read the file
+with open("employee_information.txt", "r") as file:
+   print(file.read())
+# Start loop
+while answer == "y":
+    if yearly_salary >= 100000:
+        bonus_rate = 0.20
+    elif yearly_salary >= 50000:
+        bonus_rate = 0.15
+    else:
+        bonus_rate = 0.10
+    bonus_rate = 0.10
+bonus_pay = yearly_salary * bonus_rate
+#output
+print("Last name: ", last_name)
+print("Yearly salary: ", yearly_salary)
+print("Bonus:", bonus_pay)
