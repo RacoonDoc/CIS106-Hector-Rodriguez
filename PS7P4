@@ -1,0 +1,30 @@
+count = 1
+# Open and read the file
+with open("PS7P4.txt", "r") as file:
+   print(file.read())
+answer = input("Do you want to run this program that calculates inventory and cost? (y/n): ")
+    # Start loop
+# Start loop
+extended_price = quanitity * price 
+extended_price_1 = quantity_1 * price_1
+extended_price_2 = quantity_2 * price_2
+extended_price_3 = quantity_3 * price_3
+extended_price_4 = quantity_4 * price_4
+sum_of_extended_price = extended_price_1 + extended_price_2 + extended_price_3 + extended_price_4
+#output
+print("extended price of item one: ", extended_price_1)
+print("extended price of item two: ", extended_price_2)
+print("extended price of item three: ", extended_price_3)
+print("extended price of item four: ", extended_price_4)
+print("quanity of item one: ", quantity_1)
+print("quanity of item two: ", quantity_2)
+print("quanity of item three: ", quantity_3)
+print("quanity of item four: ", quantity_4)
+print("Price of item one: ", price_1)
+print("Price of item two: ", price_2)
+print("Price of item three: ", price_3)
+print("Price of item four: ", price_4)
+answer = input("Do you want to run the program again? (y/n): ")
+if count == 0:
+    print("No information entered.")
+     # End loop
