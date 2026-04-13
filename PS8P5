@@ -1,0 +1,19 @@
+count = 0
+r = input("Do you want to compute tuition cost? (Y/N)")
+while r == "Y":  # or r == "y"
+    lanam = input("Last name: ")
+    crhours = float(input("Credit hours: "))
+    dicode = (input("Enter your district code (O or I):"))
+    if dicode == "I":
+        crhourcost = 250
+    elif dicode == "O":
+        crhourcost = 550
+    tuition_cost= crhours * crhourcost
+    print ("Total tuition cost: $", tuition_cost)
+    print("Last name:", lanam)
+    count += 1
+    r = input("Do you want to calculate tuition for another student? (Y/N): ")
+if count == 0:
+  print("No information entered.")
+  print("Total students entered:", count)
+  print("Have a nice day!")
