@@ -1,0 +1,26 @@
+count = 0
+r = input("Do you want to compute gross pay? (Y/N)")
+while r == "Y":  # or r == "y"
+    lanam = input("Last name: ")
+    howork = float(input("Hours worked: "))
+    jocode = (input("Enter your job code:"))
+    if jocode == "J":
+        pay_rate = 50
+    elif jocode == "L":
+        pay_rate = 25
+    elif jocode == "A":
+     pay_rate = 20
+    else:
+        pay_rate = 0
+    if howork > 40:
+        ex_worked = howork - 40
+    gross_pay = (40 * pay_rate) + (ex_worked * pay_rate * 1.5)
+    gross_pay = howork * pay_rate
+    print ("Total gross pay: $", gross_pay)
+    print("Last name:", lanam)
+    count += 1
+    r = input("Do you want to calculate gross pay for another employee? (Y/N): ")
+if count == 0:
+  print("No information entered.")
+  print("Total employees entered:", count)
+  print("Have a nice day!")
