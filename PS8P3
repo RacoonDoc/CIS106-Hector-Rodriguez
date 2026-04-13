@@ -1,0 +1,14 @@
+count = 0
+r = input("Do you want to compute mpg (Y/N)")
+while r == "Y":  # or r == "y"
+      Decity = input("Enter destination city: ")
+      mitrav = float(input("Miles traveled: "))
+      gaused = float(input("Gallons used: "))
+      mpg = mitrav/gaused
+      print ("Miles per gallon: ", mpg)
+      print("Destination city:", Decity)
+      count += 1
+      r = input("Do you want to calculate another mpg for another trip (Y/N): ")
+if count == 0:
+    print("No information entered.")
+print("Total trips entered:", count)
