@@ -1,0 +1,13 @@
+count = 0
+r = input("Do you want to compute batting average (Y/N)")
+while r == "Y":  # or r == "y"
+      lanam = input("Enter last name: ")
+      nuofhits = float(input("Enter number of hits: "))
+      atbats = float(input("Enter number of times at bat: "))
+      bat_avg = nuofhits / atbats
+      print(lanam, "has a batting average of", format(bat_avg,))
+      count += 1
+      r = input("Do you want to calculate another batting average? (Y/N): ")
+if count == 0:
+    print("No information entered.")
+print("Total number of players entered:", count)
