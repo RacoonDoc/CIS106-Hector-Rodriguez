@@ -1,0 +1,17 @@
+def Comptotprice(qnt, unitprice):
+    return qnt * unitprice
+totprice = 0
+r = input("Do you want to calculate extended price? (Y/N): ")
+while r == "Y":
+    qnt = float(input("Enter quantity: "))
+    unitprice = float(input("Enter unit price: "))
+    totprice = Comptotprice(qnt, unitprice)
+    if totprice > 10000:
+        discamt = totprice * 0.10
+    else:
+        discamt = 0.0
+    extended_price = totprice - discamt
+    print("Total price is", totprice)
+    print("Discount amount is", discamt)
+    r = input("Do you want to calculate another extended price? (Y/N): ")
+print("Total of all extended prices is", extended_price)
