@@ -1,0 +1,17 @@
+count = 0
+r = input("Do you want to do this program that calculates the paint needed for the square footage of a room?(Y/N):")
+while r == "Y":
+     length= float(input("Enter the length in feet: "))
+     width= (float(input("Enter the width of the room in feet:")))
+     height= (float(float(input("Enter the height of the room in feet:"))))
+     square_foot_walls=  width * height * 4
+     square_foot_ceiling_floor= width * length
+     total_square_feet = square_foot_walls + square_foot_ceiling_floor
+     gal_paint = total_square_feet / 50
+     print("You need this many gallons of paint.", gal_paint)
+     count += 1
+     r = input("Do you want to calculate painted for another room? (Y/N): ")
+if count == 0:
+    print ("No information entered.")
+    print ("Times programmed has been used:", count)
+    print ("Have a nice day!")
