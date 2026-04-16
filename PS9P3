@@ -1,0 +1,29 @@
+count = 0
+r = input("Do you want to compute car cost? (Y/N)")
+while r == "Y":
+    make = input("Make: ")
+    model = input("Model: ")
+    msrp = float(input("MSRP: "))
+    eleveh = input("Electric Vehicle? (Y/N): ")
+    if eleveh == "Y":
+        msrp = msrp * 0.70
+    if make == "Honda":
+        msrp = msrp * 0.95
+    elif make == "Toyota":
+        msrp = msrp * 0.95
+    else:
+        msrp = msrp * 0.95
+    if model == "Accord":
+        msrp = msrp * 0.90
+    elif model == "Rav4":
+        msrp = msrp * 0.85
+    else:
+        msrp = msrp * 0.95
+    tax = msrp * 0.07
+    tot_cost = msrp + tax
+    print("Total Cost of the new car:", tot_cost)
+    count += 1
+    r = input("Do you want to compute another car cost? (Y/N)")
+if count == 0:
+    print("No information entered.")
+print("Total cars calculated:", count)
