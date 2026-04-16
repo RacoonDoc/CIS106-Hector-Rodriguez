@@ -1,0 +1,24 @@
+count = 0
+total_cost = 0
+r=input("Do you want to do this program that calculates train ticket prices? (Y/N):")
+while r == "Y":
+      lanam = input("Last name: ")
+      miles = float(input("Enter the distance (in miles) it takes to get to Downtown Chicago:"))
+      if 30 <= miles <= 40:
+         ticket_cost = 12
+      elif 20 <= miles <= 29:
+         ticket_cost = 10
+      elif 10 <= miles <= 19:
+         ticket_cost == 8
+      else:
+         ticket_cost = 5
+      print("Ticket Cost: $", ticket_cost)
+      total_cost += ticket_cost
+      count += 1
+      r = input("Do you want to find the cost of another persons ticket? (Y/N): ")
+if count == 0:
+  print("No information entered.")
+else:
+  print("Times programmed has been used:", count)
+  print("Total cost of all tickets: $", total_cost)
+  print("Have a nice day!")
