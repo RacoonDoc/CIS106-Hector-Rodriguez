@@ -1,0 +1,28 @@
+count = 0
+total_cost = 0
+r=input("Do you want to calculate assessed value of your house? (Y/N):")
+while r == "Y":
+      county= input("County: ")
+      marketvalue= float(input("Enter the market value of the house:"))
+      if county == "Cook":
+        assesed_value = .90
+      elif county == "Dupage":
+        assesed_value= .80
+      elif county == "McHenry":
+        assesed_value= .75
+      elif county == "Kane":
+        assesed_value= .60
+      else: 
+        assesed_value= .70
+      assed_value_total= assesed_value * marketvalue
+      print("Assesed value total $", assed_value_total)
+      total_cost += assed_value_total
+      count += 1
+      r = input("Do you want to find the assessed value of another home? (Y/N): ")
+if count == 0:
+  print("No information entered.")
+else:
+  print("Times programmed has been used:", count)
+  print("Total assessed value of all homes: $", total_cost)
+  print("Have a nice day!")
+
