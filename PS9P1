@@ -1,0 +1,23 @@
+count = 0
+r = input("Do you want to do this program that calculates next month's forecast? (Y/N):")
+while r == "Y":
+    lanam = input("Last name: ")
+    months= (input("Enter the quarter you  want to predict: Q1, Q2, Q3, Q4: "))
+    sales= float(input("Enter your sales:"))
+    if months== "Q1":
+        forecast_percent = 0.10
+    elif months == "Q2":
+          forecast_percent= .15
+    elif months == "Q3":
+         forecast_percent = .20
+    else:
+        forecast_percent= .25
+    nxtmthsal= sales * (1+ forecast_percent)
+    print("Next month’s sales:", nxtmthsal)
+    count += 1
+    r = input("Do you want to calculate gross pay for another quarter? (Y/N): ")
+if count == 0:
+    print("No information entered.")
+    print("Times programmed has been used:", count)
+    print("Have a nice day!")
+
