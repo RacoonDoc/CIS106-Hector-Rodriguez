@@ -1,0 +1,13 @@
+def discount (qty, pri, discountrate):
+    total = (qty * pri)
+    discount = discountrate * total
+    discprice = total- discount
+    return discount, discprice
+qty = float (input("Enter the quantity:"))
+pri = float (input("Enter the price:"))
+discountrate = float (input("Enter the discount rate as a decimal:"))
+discount, discprice = discount (qty, pri, discountrate)
+print("Quantity is equal to:", qty)
+print("Unit price is $ ",pri )
+print("This is your discounted amount $", discount)
+print("This is the discounted price $", discprice)
