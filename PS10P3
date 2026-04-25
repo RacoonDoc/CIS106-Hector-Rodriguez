@@ -1,0 +1,13 @@
+def sales_report(sales):
+    if  sales > 100000:
+         percentage == 0.10
+    elif sales  <= 100000:
+        percentage = 0.05
+    commission = sales * percentage
+    nextyears = sales * 1.05
+    return commission, nextyears
+salesperson = input ("Enter the lastname of the salesperson: ")
+sales = float(input("Enter the sales amount:"))
+commission, nextyears = sales_report(sales)
+print("Commision made: ", commission)
+print("Next years expected sales made: ",nextyears)
