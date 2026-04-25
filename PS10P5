@@ -1,0 +1,13 @@
+total = 0.0
+tax = 0.0
+def comptotal(qty,price):
+    global total
+    total = qty * price
+    global tax
+    tax= total * 0.07
+    return
+qty= float(input("Enter the quantity of the item:"))
+price = float(input("Enter the price of the item:"))
+comptotal(qty,price)
+print("Your total is: $",total)
+print("Tax total is $",tax)
