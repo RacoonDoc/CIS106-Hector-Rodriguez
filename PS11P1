@@ -1,0 +1,11 @@
+last_names = ["Rodriguez", "Deditz", "Daisy", "Ramirez", "Taylor"]
+def display_names(names):
+    print("\nNames:")
+    for name in names:
+        print(name)
+def display_reverse(names):
+    print("\nNames in Reverse:")
+    for i in range(len(names)-1, -1, -1):
+        print(names[i])
+display_names (last_names)
+display_reverse (last_names)
