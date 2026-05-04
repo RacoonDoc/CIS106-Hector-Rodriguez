@@ -1,0 +1,81 @@
+numbers = []
+
+n = int(input("How many numbers? "))
+
+for i in range(n):
+    value = int(input("Enter an integer: "))
+    numbers.append(value)
+
+print("List:", numbers)
+#list 2
+numbers = [10, 20, 30]
+
+numbers.insert(1, 99)
+
+print("After insert:", numbers)
+#list 3
+numbers = [10, 99, 30]
+
+index_99 = numbers.index(99)
+numbers[index_99] = 100
+
+print("After replace:", numbers)
+numbers = [10, 20, 30]
+list2 = [500, 600, 700, 800, 900]
+
+numbers.extend(list2)
+
+print("Extended list:", numbers)
+#list 4
+numbers = [10, 20, 800, 30]
+
+numbers.remove(800)
+
+print("After removing 800:", numbers)
+#list 5
+numbers = [10, 20, 30, 40]
+
+numbers.pop(2)
+
+print("After removing 3rd item:", numbers)grades = ["A", "B", "C", "A", "A", "C"]
+
+print("Number of A's:", grades.count("A"))
+print("Index of first B:", grades.index("B"))
+
+if "F" in grades:
+    print("F is in list")
+else:
+    print("F is not in list")
+#list 6
+list2 = [500, 600, 700]
+
+list2.clear()
+
+print("After clear:", list2)
+#list 7
+list2 = [500, 600, 700]
+
+list2.clear()
+
+print("After clear:", list2)
+list2 = [500, 600, 700]
+
+del list2
+
+print(list2) 
+players = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+
+players.sort()
+
+print("Sorted:", players)
+players = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+
+players2 = players.copy()
+
+print("Copy:", players2)players = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+
+players2 = players.copy()
+players2.reverse()
+
+print("Original:", players)
+print("Reversed copy:", players2)
