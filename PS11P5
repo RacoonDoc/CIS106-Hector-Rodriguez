@@ -1,0 +1,43 @@
+count = 0
+
+players = [
+    "Rodriguez",
+    "Deditz",
+    "Daisy",
+    "Ramirez",
+    "Taylor",
+    "O'Brien",
+    "Davidson",
+    "Castellano",
+    "Riley",
+    "OShea",
+]
+
+averages = [0.300, 0.244, 0.221, 0.253, 0.213, 0.214, 0.249, 0.265, 0.001, 0.264]
+
+
+def display_players(players, averages):
+    print("\nPlayers and Batting Averages:")
+    for i in range(len(players)):
+        print(players[i], "-", averages[i])
+
+
+def search_player(players, averages, target):
+    for i in range(len(players)):
+        if players[i].lower() == target.lower():
+            print(players[i], "-", averages[i])
+            return
+    print("Name not found, maybe he quit?")
+
+display_players(players, averages)
+
+
+r = input("\nDo you want to search for a player? (Y/N): ")
+
+while r == "Y":
+    name = input("Enter last name: ")
+
+    search_player(players, averages, name)
+    
+    count += 1
+    r = input("Search again? (Y/N): ")
