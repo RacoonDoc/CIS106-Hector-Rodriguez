@@ -1,0 +1,29 @@
+last_names = ["Rodriguez", "Deditz", "Daisy", "Ramirez", "Taylor"]
+
+scores = [80, 100, 50, 27, 84]
+
+def display_names_scores(names, scores):
+    print("\nNames and Scores:")
+    for i in range(len(names)):
+        print(names[i], "-", scores[i])
+
+def find_high_low(names, scores):
+    high_var = 0
+    low_var = 999
+    high_index = 0
+    low_index = 0
+
+    for i in range(len(scores)):
+        if scores[i] > high_var:
+            high_var = scores[i]
+            high_index = i
+        if scores[i] < low_var:
+            low_var = scores[i]
+            low_index = i
+
+    print("\nHighest:", names[high_index], "-", high_var)
+    print("Lowest:", names[low_index], "-", low_var)
+
+# Run
+display_names_scores(last_names, scores)
+find_high_low(last_names, scores)
