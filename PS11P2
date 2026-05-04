@@ -1,0 +1,15 @@
+last_names = ["Rodriguez", "Deditz", "Daisy", "Ramirez", "Taylor"]
+scores = ["80", "100", "50", "27", "84"]
+
+def display_names_scores(names, scores):
+    print("\nNames and scores:")
+    for i in range(len(names)):
+        print(names[i], "-", scores[i])
+
+def display_reverse_names_scores(names,scores):
+    print("\nNames and Scores in Reverse:")
+    for i in range(len(names)-1, -1, -1):
+        print(names[i], "-", scores[i])
+
+display_names_scores(last_names, scores)
+display_reverse_names_scores(last_names, scores)
