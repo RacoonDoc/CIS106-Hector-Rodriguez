@@ -1,0 +1,15 @@
+class Employee:
+    def __init__(self, bonusrate, salary, lastname):
+        self.lastname = lastname
+        self.bonusrate = bonusrate
+        self.salary = salary
+    def calculate_bonus(self):
+        bonus = self.salary * self.bonusrate
+        return bonus
+# Create an Employee object
+employee1 = Employee(0.40, 50000, "Rodriguez")
+print("Employee Last Name:", employee1.lastname)
+print("Employee Salary:", employee1.salary)
+print("Employee Bonus Rate:", employee1.bonusrate)
+bonus_amount = employee1.calculate_bonus()
+print("Employee Bonus:", bonus_amount)
