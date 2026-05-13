@@ -1,0 +1,24 @@
+class Student:
+    def __init__(self, firstname, lastname, districtcode, tuitionhours):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.districtcode = districtcode
+        self.tuitionhours = tuitionhours
+    def calculate_tuitioncost(self):
+        if self.districtcode.upper() == "I":
+            tuitionowed = self.tuitionhours * 250.00
+        else:
+            tuitionowed = self.tuitionhours * 500.00
+        return tuitionowed
+firstname = input("Enter your first name: ")
+lastname = input("Enter your last name: ")
+districtcode = input("Enter your district code (I or O): ")
+tuitionhours = int(input("Enter the credit hours: "))
+student1 = Student(firstname, lastname, districtcode, tuitionhours)
+tuitioncost = student1.calculate_tuitioncost()
+print("Student Information")
+print("First Name:", student1.firstname)
+print("Last Name:", student1.lastname)
+print("District Code:", student1.districtcode)
+print("Credit Hours:", student1.tuitionhours)
+print("Tuition Owed: $", tuitioncost)
